@@ -95,11 +95,11 @@
         </a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('/barangKeluar'); ?>">
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="">
           <i class="bi bi-journal-text"></i><span>Barang Keluar</span>
         </a>
-      </li>
+      </li> -->
     </ul>
 
   </aside><!-- End Sidebar-->
