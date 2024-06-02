@@ -18,6 +18,7 @@
                             <th scope="col">Nama Barang</th>
                             <th scope="col">Jenis Barang</th>
                             <th scope="col">Tanggal Masuk</th>
+                            <th scope="col">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -29,7 +30,6 @@
                                 <td><?= $barang->nama_brg ?></td>
                                 <td><?= $barang->jenis_brg ?></td>
                                 <td><?= $barang->tgl_masuk ?></td>
-                                <td><span class="badge bg-success">Approved</span></td>
                                 <td><a href="<?= base_url('') . $barang->id ?> " data-bs-toggle="modal" data-bs-target="#edit<?= $barang->id ?>" class="bi bi-pen"> </a>
                                     <a href="<?= base_url('') . $barang->id ?>" class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#delet<?= $barang->id ?>"> </a>
                                 </td>
@@ -38,24 +38,6 @@
 
                     </tbody>
                 </table>
-                <!-- Pagination with icons -->
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination ">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav><!-- End Pagination with icons -->
             </div>
 
         </div>
